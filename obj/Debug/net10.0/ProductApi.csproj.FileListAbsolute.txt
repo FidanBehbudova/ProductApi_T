@@ -159,4 +159,5 @@ C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\obj\Debug\net10.0\ref\ProductA
 C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\obj\Debug\net10.0\ProductApi.sourcelink.json
 C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

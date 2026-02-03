@@ -42,6 +42,7 @@ namespace ProductApi.Controllers
                 Description = createProductDto.Description,
                 Price = createProductDto.Price,
                 CreatedAt = DateTime.Now,
+                CategoryId = createProductDto.CategoryId,
 
             };
             await _context.Products.AddAsync(product);
@@ -59,12 +60,13 @@ namespace ProductApi.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateProduct(UpdateProductDto updateProductDto,int id)
+        public async Task<IActionResult> UpdateProduct(UpdateProductDto updateProductDto, int id)
         {
             var updatedProduct = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
-            updatedProduct.Description= updateProductDto.Description;
-            updatedProduct.Price= updateProductDto.Price;
-            updatedProduct.Name=updateProductDto.Name;
+            updatedProduct.Description = updateProductDto.Description;
+            updatedProduct.Price = updateProductDto.Price;
+            updatedProduct.Name = updateProductDto.Name;
+            updatedProduct.CategoryId = updateProductDto.CategoryId;
             await _context.SaveChangesAsync();
             return Ok();
 

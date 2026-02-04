@@ -36,12 +36,14 @@
 
 using Microsoft.EntityFrameworkCore;
 using ProductApi.DAL;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductApi.DAL;
@@ -13,35 +14,38 @@ namespace ProductApi.Controllers
     {
 
         private readonly AppDbContext _context;
+        private readonly IMapper _mapper;
 
-        public CategoriesController(AppDbContext context)
+
+        public CategoriesController(AppDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllCategories()
+        public async Task<ActionResult<GetCategoryDto>> GetAllCategories()
         {
-            return Ok(await _context.Categories.ToListAsync());
+            var result = await _context.Categories.ToListAsync();
+            _mapper.Map<List<GetCategoryDto>>(result);
+            return Ok(result);
         }
 
 
         [HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _context.Categories.FirstOrDefaultAsync(c => c.Id == id));
+            var result = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+            return Ok(_mapper.Map<GetCategoryDto>(result));
+
         }
 
 
         [HttpPost]
         public async Task<IActionResult> CreateCategory(CreateCategoryDto createCategoryDto)
         {
-            Category category = new Category()
-            {
-                Name = createCategoryDto.Name,
 
-            };
-            await _context.Categories.AddAsync(category);
+            await _context.Categories.AddAsync(_mapper.Map<Category>(createCategoryDto));
             await _context.SaveChangesAsync();
             return Ok();
         }
@@ -57,15 +61,29 @@ namespace ProductApi.Controllers
 
 
 
+        //[HttpPut]
+        //public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto, int id)
+        //{
+        //    var updatedCategory = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+
+        //    _context.Categories.Update(_mapper.Map<Category>(updateCategoryDto));
+        //    await _context.SaveChangesAsync();
+        //    return Ok();
+
+        //}
+
+
         [HttpPut]
         public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto, int id)
         {
-            var updatedCategory = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-            updatedCategory.Name = updateCategoryDto.Name;
+            var updatedCategory = await _context.Categories.FirstAsync(c => c.Id == id);
+
+            _mapper.Map(updateCategoryDto, updatedCategory);
+
             await _context.SaveChangesAsync();
             return Ok();
-
         }
+
 
     }
 }

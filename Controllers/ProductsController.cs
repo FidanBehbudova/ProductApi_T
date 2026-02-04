@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductApi.DAL;
@@ -13,38 +14,36 @@ namespace ProductApi.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly IMapper _mapper;
 
-        public ProductsController(AppDbContext context)
+        public ProductsController(AppDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllProducts()
+        public async Task<ActionResult<GetProductDto>> GetAllProducts()
         {
-            return Ok(await _context.Products.ToListAsync());
+            var result = await _context.Products.Include(p=>p.Category).ToListAsync();
+           var product= _mapper.Map<List<GetProductDto>>(result);
+            return Ok(product);
         }
 
 
         [HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _context.Products.FirstOrDefaultAsync(p => p.Id == id));
+            var result = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
+            return Ok(_mapper.Map<GetProductDto>(result));
         }
 
 
         [HttpPost]
         public async Task<IActionResult> CreateProduct(CreateProductDto createProductDto)
         {
-            Product product = new Product()
-            {
-                Name = createProductDto.Name,
-                Description = createProductDto.Description,
-                Price = createProductDto.Price,
-                CreatedAt = DateTime.Now,
-                CategoryId = createProductDto.CategoryId,
-
-            };
+            var product = _mapper.Map<Product>(createProductDto);
+            product.CreatedAt= DateTime.Now;
             await _context.Products.AddAsync(product);
             await _context.SaveChangesAsync();
             return Ok();
@@ -63,10 +62,7 @@ namespace ProductApi.Controllers
         public async Task<IActionResult> UpdateProduct(UpdateProductDto updateProductDto, int id)
         {
             var updatedProduct = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
-            updatedProduct.Description = updateProductDto.Description;
-            updatedProduct.Price = updateProductDto.Price;
-            updatedProduct.Name = updateProductDto.Name;
-            updatedProduct.CategoryId = updateProductDto.CategoryId;
+            _mapper.Map(updateProductDto, updatedProduct);
             await _context.SaveChangesAsync();
             return Ok();
 

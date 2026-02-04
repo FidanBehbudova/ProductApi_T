@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wQtJXmOnSJI=",
+  "dgSpecHash": "w9adxj2PeS8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\ProductApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Fidan\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Fidan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Fidan\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Fidan\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
     "C:\\Users\\Fidan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

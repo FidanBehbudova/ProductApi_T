@@ -19,7 +19,7 @@ namespace ProductApi.Controllers
 
         public CategoriesController(AppDbContext context, IMapper mapper)
         {
-            _context = context;
+            _context = context;  
             _mapper = mapper;
         }
 

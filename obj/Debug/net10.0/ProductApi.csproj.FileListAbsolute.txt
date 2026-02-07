@@ -164,3 +164,4 @@ C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\bin\Debug\net10.0\AutoMapper.d
 C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\bin\Debug\net10.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\Fidan\OneDrive\Desktop\vs2026\ProductApi\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

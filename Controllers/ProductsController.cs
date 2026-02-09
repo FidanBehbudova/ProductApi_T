@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductApi.DAL;
+using ProductApi.DAL.Repositories.Abstract;
 using ProductApi.Entities;
 using ProductApi.Entities.Dtos.Products;
 using System.Diagnostics.Eventing.Reader;
@@ -13,29 +14,27 @@ namespace ProductApi.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly IProductRepository _repository;
         private readonly IMapper _mapper;
 
-        public ProductsController(AppDbContext context, IMapper mapper)
+        public ProductsController(IProductRepository repository, IMapper mapper)
         {
-            _context = context;
+            _repository = repository;
             _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<ActionResult<GetProductDto>> GetAllProducts()
         {
-            var result = await _context.Products.Include(p=>p.Category).ToListAsync();
-           var product= _mapper.Map<List<GetProductDto>>(result);
-            return Ok(product);
+            return Ok(await _repository.GetProductsAsync());
         }
 
 
         [HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
-            var result = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
-            return Ok(_mapper.Map<GetProductDto>(result));
+            return Ok(await _repository.GetProductAsync(c=>c.Id==id));
+
         }
 
 
@@ -44,26 +43,26 @@ namespace ProductApi.Controllers
         {
             var product = _mapper.Map<Product>(createProductDto);
             product.CreatedAt= DateTime.Now;
-            await _context.Products.AddAsync(product);
-            await _context.SaveChangesAsync();
-            return Ok();
+            await _repository.AddAsync(product);
+            await _repository.SaveChangesAsync();
+            return Ok(product);
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteProduct(int id)
         {
-            var deletedProduct = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
-            _context.Products.Remove(deletedProduct);
-            await _context.SaveChangesAsync();
+            var deletedProduct = await _repository.GetProductAsync(p => p.Id == id);
+            _repository.Remove(deletedProduct);
+            await _repository.SaveChangesAsync();
             return Ok();
         }
 
         [HttpPut]
         public async Task<IActionResult> UpdateProduct(UpdateProductDto updateProductDto, int id)
         {
-            var updatedProduct = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
+            var updatedProduct = await _repository.GetProductAsync(p => p.Id == id);
             _mapper.Map(updateProductDto, updatedProduct);
-            await _context.SaveChangesAsync();
+            await _repository.SaveChangesAsync();
             return Ok();
 
         }

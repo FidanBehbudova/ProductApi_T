@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductApi.DAL;
+using ProductApi.DAL.Repositories.Abstract;
 using ProductApi.Entities;
 using ProductApi.Entities.Dtos.Categories;
 
@@ -13,30 +14,26 @@ namespace ProductApi.Controllers
     public class CategoriesController : ControllerBase
     {
 
-        private readonly AppDbContext _context;
+        private readonly ICategoryRepository _repository;
         private readonly IMapper _mapper;
 
-
-        public CategoriesController(AppDbContext context, IMapper mapper)
+        public CategoriesController(ICategoryRepository repository, IMapper mapper)
         {
-            _context = context;  
+            _repository = repository;
             _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<ActionResult<GetCategoryDto>> GetAllCategories()
         {
-            var result = await _context.Categories.ToListAsync();
-            _mapper.Map<List<GetCategoryDto>>(result);
-            return Ok(result);
+           return Ok(await _repository.GetCategoriesAsync());
         }
 
 
         [HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
-            var result = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-            return Ok(_mapper.Map<GetCategoryDto>(result));
+           return Ok(await _repository.GetCategoryAsync(c=>c.Id == id));
 
         }
 
@@ -45,42 +42,28 @@ namespace ProductApi.Controllers
         public async Task<IActionResult> CreateCategory(CreateCategoryDto createCategoryDto)
         {
 
-            await _context.Categories.AddAsync(_mapper.Map<Category>(createCategoryDto));
-            await _context.SaveChangesAsync();
-            return Ok();
+           var category =_mapper.Map<Category>(createCategoryDto);
+            await _repository.AddAsync(category);
+            await _repository.SaveChangesAsync();
+            return Ok(category);
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteCategoryt(int id)
         {
-            var deletedCategory = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-            _context.Categories.Remove(deletedCategory);
-            await _context.SaveChangesAsync();
+            var deletedCategory = await _repository.GetCategoryAsync(c => c.Id == id);
+            _repository.Remove(deletedCategory);
+            await _repository.SaveChangesAsync();
             return Ok();
         }
-
-
-
-        //[HttpPut]
-        //public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto, int id)
-        //{
-        //    var updatedCategory = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-
-        //    _context.Categories.Update(_mapper.Map<Category>(updateCategoryDto));
-        //    await _context.SaveChangesAsync();
-        //    return Ok();
-
-        //}
 
 
         [HttpPut]
         public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto, int id)
         {
-            var updatedCategory = await _context.Categories.FirstAsync(c => c.Id == id);
-
+            var updatedCategory = await _repository.GetCategoryAsync(c => c.Id == id);
             _mapper.Map(updateCategoryDto, updatedCategory);
-
-            await _context.SaveChangesAsync();
+            await _repository.SaveChangesAsync();
             return Ok();
         }
 

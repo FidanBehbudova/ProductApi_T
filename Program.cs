@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using ProductApi.DAL;
+using ProductApi.DAL.Repositories.Abstract;
+using ProductApi.DAL.Repositories.Concrete.EntityFramework;
 using ProductApi.Entities.Auth;
 using System.Reflection;
 using System.Text;
@@ -21,6 +23,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddIdentity<AppUser,IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+
 
 builder.Services.AddAuthentication(opt =>
 {

@@ -85,6 +85,37 @@
   },
   {
     "ContainingType": "ProductApi.Controllers.CategoriesController",
+    "Method": "GetAllCategoriesPeginated",
+    "RelativePath": "api/Categories/GetAllCategoriesPeginated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProductApi.Entities.Dtos.Categories.GetCategoryDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductApi.Controllers.CategoriesController",
     "Method": "GetById",
     "RelativePath": "api/Categories/GetById",
     "HttpMethod": "GET",
@@ -182,6 +213,27 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductApi.Controllers.ProductsController",
+    "Method": "GetPaginate",
+    "RelativePath": "api/Products/GetPaginate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
         "Type": "System.Int32",
         "IsRequired": false
       }

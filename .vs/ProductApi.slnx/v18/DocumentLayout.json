@@ -7,28 +7,44 @@
       "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\dal\\repositories\\abstract\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:dal\\repositories\\abstract\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\dal\\repositories\\concrete\\entityframework\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:dal\\repositories\\concrete\\entityframework\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\dal\\repositories\\concrete\\entityframework\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:dal\\repositories\\concrete\\entityframework\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\dal\\repositories\\abstract\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:dal\\repositories\\abstract\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\dal\\repositories\\abstract\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:dal\\repositories\\abstract\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\core\\dal\\repositories\\concrete\\entityframework\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:core\\dal\\repositories\\concrete\\entityframework\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\core\\dal\\repositories\\abstract\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:core\\dal\\repositories\\abstract\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\productapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:productapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\entities\\dtos\\products\\getproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:entities\\dtos\\products\\getproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|c:\\users\\fidan\\onedrive\\desktop\\vs2026\\productapi\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E66489BC-4E1A-728F-00B0-C403EBB5F80B}|ProductApi.csproj|solutionrelative:profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +54,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 343,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Abstract\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\Abstract\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Abstract\\ICategoryRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\Abstract\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T16:30:58.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Concrete\\EntityFramework\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\Concrete\\EntityFramework\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Concrete\\EntityFramework\\CategoryRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\Concrete\\EntityFramework\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T16:38:06.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Abstract\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\Abstract\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Abstract\\IProductRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\Abstract\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T17:46:16.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Concrete\\EntityFramework\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\Concrete\\EntityFramework\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Concrete\\EntityFramework\\ProductRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\Concrete\\EntityFramework\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T17:47:31.557Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -48,93 +116,87 @@
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBMAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAQwEwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T20:10:28.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T20:01:21.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Concrete\\EntityFramework\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\Repositories\\Concrete\\EntityFramework\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Concrete\\EntityFramework\\ProductRepository.cs",
-              "RelativeToolTip": "DAL\\Repositories\\Concrete\\EntityFramework\\ProductRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T19:30:03.042Z",
+              "WhenOpened": "2026-02-10T17:59:02.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Concrete\\EntityFramework\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\Repositories\\Concrete\\EntityFramework\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Concrete\\EntityFramework\\CategoryRepository.cs",
-              "RelativeToolTip": "DAL\\Repositories\\Concrete\\EntityFramework\\CategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABIAAAAAAAAAA==",
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Core\\DAL\\Repositories\\Concrete\\EntityFramework\\Repository.cs",
+              "RelativeDocumentMoniker": "Core\\DAL\\Repositories\\Concrete\\EntityFramework\\Repository.cs",
+              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Core\\DAL\\Repositories\\Concrete\\EntityFramework\\Repository.cs",
+              "RelativeToolTip": "Core\\DAL\\Repositories\\Concrete\\EntityFramework\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T19:29:42.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Abstract\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\Repositories\\Abstract\\IProductRepository.cs",
-              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Abstract\\IProductRepository.cs",
-              "RelativeToolTip": "DAL\\Repositories\\Abstract\\IProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T18:55:50.276Z",
+              "WhenOpened": "2026-02-10T18:23:42.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Abstract\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\Repositories\\Abstract\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\DAL\\Repositories\\Abstract\\ICategoryRepository.cs",
-              "RelativeToolTip": "DAL\\Repositories\\Abstract\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T18:55:38.459Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 58,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
               "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAkwEAAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T19:49:08.077Z",
+              "WhenOpened": "2026-02-10T16:51:05.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Core\\DAL\\Repositories\\Abstract\\IRepository.cs",
+              "RelativeDocumentMoniker": "Core\\DAL\\Repositories\\Abstract\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Core\\DAL\\Repositories\\Abstract\\IRepository.cs",
+              "RelativeToolTip": "Core\\DAL\\Repositories\\Abstract\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T18:23:27.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductApi",
+              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\ProductApi.csproj",
+              "RelativeDocumentMoniker": "ProductApi.csproj",
+              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\ProductApi.csproj",
+              "RelativeToolTip": "ProductApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-10T18:20:36.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Entities\\Dtos\\Products\\GetProductDto.cs",
+              "RelativeDocumentMoniker": "Entities\\Dtos\\Products\\GetProductDto.cs",
+              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Entities\\Dtos\\Products\\GetProductDto.cs",
+              "RelativeToolTip": "Entities\\Dtos\\Products\\GetProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T18:05:14.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Profiles\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "Profiles\\MappingProfiles.cs",
+              "ToolTip": "C:\\Users\\Fidan\\OneDrive\\Desktop\\vs2026\\ProductApi\\Profiles\\MappingProfiles.cs",
+              "RelativeToolTip": "Profiles\\MappingProfiles.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T18:13:42.824Z",
               "EditorCaption": ""
             }
           ]

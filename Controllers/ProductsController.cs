@@ -26,14 +26,28 @@ namespace ProductApi.Controllers
         [HttpGet]
         public async Task<ActionResult<GetProductDto>> GetAllProducts()
         {
-            return Ok(await _repository.GetProductsAsync());
+            var product = await _repository.GetAllAsync(includes:"Category");
+            var dto = _mapper.Map<List<GetProductDto>>(product);
+            return Ok(dto);
         }
 
 
         [HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _repository.GetProductAsync(c=>c.Id==id));
+            var product = await _repository.GetAsync(c => c.Id == id, includes: "Category");
+            var dto = _mapper.Map<GetProductDto>(product);
+
+            return Ok(dto);
+
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetPaginate(int page,int size)
+        {
+            var products = await _repository.GetPaginateAsync(page, size, includes: "Category");
+            var result = _mapper.Map<List<GetProductDto>>(products);
+            return Ok(result);
 
         }
 
@@ -51,7 +65,7 @@ namespace ProductApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> DeleteProduct(int id)
         {
-            var deletedProduct = await _repository.GetProductAsync(p => p.Id == id);
+            var deletedProduct = await _repository.GetAsync(p => p.Id == id);
             _repository.Remove(deletedProduct);
             await _repository.SaveChangesAsync();
             return Ok();
@@ -60,7 +74,7 @@ namespace ProductApi.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateProduct(UpdateProductDto updateProductDto, int id)
         {
-            var updatedProduct = await _repository.GetProductAsync(p => p.Id == id);
+            var updatedProduct = await _repository.GetAsync(p => p.Id == id);
             _mapper.Map(updateProductDto, updatedProduct);
             await _repository.SaveChangesAsync();
             return Ok();

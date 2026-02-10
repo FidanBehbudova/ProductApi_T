@@ -26,14 +26,21 @@ namespace ProductApi.Controllers
         [HttpGet]
         public async Task<ActionResult<GetCategoryDto>> GetAllCategories()
         {
-           return Ok(await _repository.GetCategoriesAsync());
+           return Ok(await _repository.GetAllAsync());
+        }
+
+
+        [HttpGet]
+        public async Task<ActionResult<GetCategoryDto>> GetAllCategoriesPeginated(int page,int size)
+        {
+            return Ok(await _repository.GetPaginateAsync(page,size));
         }
 
 
         [HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
-           return Ok(await _repository.GetCategoryAsync(c=>c.Id == id));
+           return Ok(await _repository.GetAsync(c=>c.Id == id));
 
         }
 
@@ -51,7 +58,7 @@ namespace ProductApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> DeleteCategoryt(int id)
         {
-            var deletedCategory = await _repository.GetCategoryAsync(c => c.Id == id);
+            var deletedCategory = await _repository.GetAsync(c => c.Id == id);
             _repository.Remove(deletedCategory);
             await _repository.SaveChangesAsync();
             return Ok();
@@ -61,7 +68,7 @@ namespace ProductApi.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto, int id)
         {
-            var updatedCategory = await _repository.GetCategoryAsync(c => c.Id == id);
+            var updatedCategory = await _repository.GetAsync(c => c.Id == id);
             _mapper.Map(updateCategoryDto, updatedCategory);
             await _repository.SaveChangesAsync();
             return Ok();

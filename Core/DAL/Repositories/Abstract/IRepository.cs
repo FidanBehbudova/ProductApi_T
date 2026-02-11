@@ -13,6 +13,7 @@ namespace ProductApi.Core.DAL.Repositories.Abstract
         public Task AddAsync(TEntity entity);
         public void Update(TEntity entity);
         public void Remove(TEntity entity);
-        public Task SaveChangesAsync();
+       
+        public IQueryable<TEntity> GetQuery(string[] includes);
     }
 }
